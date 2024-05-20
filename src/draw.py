@@ -11,7 +11,7 @@ class SlidePositioner:
         self._sample = sample
 
         self.num_col, self.num_row = self.get_max_col_row()
-        self.num_per_slide = self.num_col * self.num_row
+        self.num_per_slide = 4
         self.left, self.top = self._get_start_pos()
         self.data_by_slide = chunk_list(data, self.num_per_slide)
 
